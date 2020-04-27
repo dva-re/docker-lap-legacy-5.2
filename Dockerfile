@@ -7,6 +7,6 @@ rm -rf /var/cache/debconf/*-old && rm -rf /var/lib/apt/lists/* && rm -rf /usr/sh
 rm /etc/apache2/mods-enabled/rpaf.conf && \
 locale-gen ru_RU.UTF-8 && locale-gen ru_RU.CP1251
 ADD rpaf.conf /etc/apache2/mods-enabled/rpaf.conf
-ENV LANG ru_RU.CP1251
+ENV LANG ru_RU.UTF-8
 ENV LANGUAGE ru_RU:ru
-ENV LC_ALL ru_RU.CP1251
+ENV LC_ALL ru_RU.UTF-8
